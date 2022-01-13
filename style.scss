@@ -87,24 +87,19 @@
         &-nav{
             display: none;
         }
-        .burger-btn {
-            display: block;
-            img{
-                width: 30px;
-            }
+        
+    }
+    .burger-btn {
+        display: block;
+        img{
+            width: 30px;
         }
     }
-    
 }
 // -----------
 .ourStory{
     margin: 59px 0;
     color: #48555B;
-
-    &-inner{
-        
-    }
-
     &-title{
         text-align: center;
         h1{
@@ -127,80 +122,71 @@
         flex-direction: row;
         justify-content: space-between;
     }
-
-    .ourStory-item{
-        margin-top: 60px;
-        &:first-child{
-            max-width: 405px;
-        }
-        h1{
-            margin-bottom: 35px;
-            line-height: 23px;
-            letter-spacing: 0.1875px;
-            font-size: 20px;
-            span{
-                color: #00A4E5;
-            }
-        }
-        p{
-            font-size: 13px;
-            line-height: 23px;
-            letter-spacing: 0.1875px;
-        }
-        &-gallery{
-            display: flex;
-            justify-content: space-between;
-        }
-        .gallery-img{
-            margin-top: 25px;
-            width: 140px;
-            height: 223px;
-            p{
-                padding: 15px;
-                font-weight: 800;
-                font-size: 24px;
-                line-height: 29px;
-                color: #FFFFFF;
-            }
-            &+.gallery-img{
-                margin-left: 20px;
-            }
-            &-1{
-                background: url(./img/ourstory/Bitmap.png)
-            }
-            &-2{
-                background: url(./img/ourstory/Bitmap-1.png)
-            }
-            &-3{
-                background: url(./img/ourstory/Bitmap-2.png)
-            }
+}
+.ourStory-item{
+    margin-top: 60px;
+    &:first-child{
+        max-width: 405px;
+    }
+    h1{
+        margin-bottom: 35px;
+        line-height: 23px;
+        letter-spacing: 0.1875px;
+        font-size: 20px;
+        span{
+            color: #00A4E5;
         }
     }
-
+    p{
+        font-size: 13px;
+        line-height: 23px;
+        letter-spacing: 0.1875px;
+    }
+    &-gallery{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.gallery-img{
+    margin-top: 25px;
+    width: 140px;
+    height: 223px;
+    p{
+        padding: 15px;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 29px;
+        color: #FFFFFF;
+    }
+    &+.gallery-img{
+        margin-left: 20px;
+    }
+    &-1{
+        background: url(./img/ourstory/Bitmap.png)
+    }
+    &-2{
+        background: url(./img/ourstory/Bitmap-1.png)
+    }
+    &-3{
+        background: url(./img/ourstory/Bitmap-2.png)
+    }
 }
 @media screen and (max-width: 813px) {
     .ourStory{
         &-content{
         flex-wrap: wrap;
         justify-content: space-around;
-    }
+        }
         &-item-gallery{
-        flex-wrap: wrap;
-        
+        flex-wrap: wrap;  
         justify-content: space-around;
+        }
     }
-        &.ourStory-item .gallery-img + .gallery-img {
-        margin-left: 0px;
-    }
-}
 }
 // -----------------
 .ourCapabilities{
     margin: 120px 0;
     color: #48555B;
-    &-inner{
-
-    }
     &-header{
         display: flex;
         justify-content: space-between;
@@ -235,29 +221,29 @@
         justify-content: space-between;
         
     }
-    .content-item{
-        padding: 38px 23px;
-        border: 1px solid #E6E6E6;
-        box-sizing: border-box;
-        max-width: 300px;
-        color: #48555B;
+}
+.content-item{
+    padding: 38px 23px;
+    border: 1px solid #E6E6E6;
+    box-sizing: border-box;
+    max-width: 300px;
+    color: #48555B;
 
-        img{
-            width: 65.62px;
-            height: 75px;
-            margin-bottom: 25px;
-        }
-        h1{
-            font-size: 14px;
-            line-height: 24px;
-            letter-spacing: 0.426667px;
-            margin-bottom: 13px;
-        }
-        p{
-            font-size: 13px;
-            line-height: 23px;
-            letter-spacing: 0.1875px;
-        }
+    img{
+        width: 65.62px;
+        height: 75px;
+        margin-bottom: 25px;
+    }
+    h1{
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.426667px;
+        margin-bottom: 13px;
+    }
+    p{
+        font-size: 13px;
+        line-height: 23px;
+        letter-spacing: 0.1875px;
     }
 }
 @media screen and (max-width: 813px) {
@@ -383,45 +369,43 @@
             line-height: 25px;
             letter-spacing: 0.846154px;
         }
-        .links-groups{
-            display: flex;
-            flex-direction: row;
-            div{
-                display: flex;
-                flex-direction: column;
-            }
-            div+div{
-                margin-left: 34px;
-            }
-        }
     }
     &-contact{
         flex-basis: 274px;
         font-size: 11px;
         line-height: 16px;
         letter-spacing: 0.846154px;
+    }
 
-        .contact-groups{
+    .links-groups{
+        display: flex;
+        flex-direction: row;
+        div{
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            
-            .mailUs{
-                display: flex;
-                flex-direction: column;
-                a{
-                    margin-top: 20px;
-                }
-            }
-
-            .icons{
-                a+a{
-                    margin-left: 25px;
-                }
-            }
+            flex-direction: column;
+        }
+        div+div{
+            margin-left: 34px;
         }
     }
 
+    .contact-groups{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .mailUs{
+        display: flex;
+        flex-direction: column;
+        a{
+            margin-top: 20px;
+        }
+    }
+    .icons{
+        a+a{
+            margin-left: 25px;
+        }
+    }
     &-cpright{
         padding: 22px 0;
         text-align: center;
